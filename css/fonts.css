@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'MYRIADPRO-BOLD.OTF';
+    src: url('../fonts/MYRIADPRO-BOLD.OTF');
+}
+
+@font-face {
+    font-family: 'MYRIADPRO-SEMIBOLD.OTF';
+    src: url('../fonts/MYRIADPRO-SEMIBOLD.OTF');
+}
+
+@font-face {
+    font-family: 'MyriadPro-Light.otf';
+    src: url('../fonts/MyriadPro-Light.otf');
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold.ttf';
+    src: url('../fonts/OpenSans-Semibold.ttf');
+}
