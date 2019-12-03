@@ -199,3 +199,132 @@ nav ul li a:hover {
 .projects .slim .col-xl-3 img{
     width:100% !important;
 }
+
+/* ========= STRATEGIC =========== */
+.strategic {
+    padding-top: 70px;
+    padding-bottom: 65px;
+}
+.strategic .head_text {
+    display:flex;
+    font-size: 34px;
+    color:#000;
+    font-family: 'MYRIADPRO-SEMIBOLD.OTF';  
+}
+.strategic .head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.strategic .head .head_top-text {
+    margin-right: 12px;
+}
+.strategic .head .head_top-text:first-letter {
+    color:#ffc600;
+    font-size: 52px;
+}
+.strategic .head .head_bott-text:first-letter {
+    font-size: 52px;
+}
+.strategic .head .line {
+    width:140px;
+    height:1px;
+    background: rgb(185, 183, 183);
+    margin-left: 130px;
+    margin-top: -33px;
+}
+.strategic .body_top-text {
+    font-size: 16px;
+    color: #000000;
+    font-style: italic;
+    font-weight: 700;
+}
+.strategic .body_bott-text {
+    font-size: 16px;
+    color: #1d1d1d;
+    margin-bottom: 60px;
+}
+.strategic .slim .col-xl-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+.strategic .slim .col-xl-5 img{
+    width:100% !important;
+}
+.strategic .right > div:first-child {
+    order:2;
+}
+.strategic .right > div:last-child {
+    order:1;
+}
+.strategic .methods_body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.strategic .methods_body h3{
+    font-size: 34px;
+    color:#000;
+    font-family: 'MYRIADPRO-SEMIBOLD.OTF';  
+}
+.strategic .methods_body h3 span {
+    font-size: 50px;
+}
+.strategic .methods_body h3::first-letter {
+    font-size: 50px;
+}
+.strategic .methods_body h3 + p {
+    font-style: italic;
+    color:#101010;
+    font-weight: 700;
+}
+
+/* ========== SERVICES ======.*/
+.services {
+    padding-top: 42px;
+    padding-bottom: 60px;
+    background-image: url(../images/service_bcg.jpg);
+    background-size: cover;
+    color:white;
+}
+.services .head_text {
+    display:flex;
+    font-size: 34px;
+    color:#fff;
+    font-family: 'MYRIADPRO-SEMIBOLD.OTF';  
+}
+.services .head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.services .head .head_top-text {
+    margin-right: 12px;
+}
+.services .head .head_top-text:first-letter {
+    color:#ffc600;
+    font-size: 52px;
+}
+.services .head .head_bott-text:first-letter {
+    font-size: 52px;
+}
+.services .head .line {
+    width:150px;
+    height:1px;
+    background: #fff;
+    margin-left: 130px;
+    margin-top: -33px;
+}
+.services .column p:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.services .column p:last-child {
+    font-size: 12px;
+}
+.services .container div.row:nth-child(2) {
+    margin-bottom: 75px;
+}
