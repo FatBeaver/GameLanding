@@ -133,3 +133,69 @@ nav ul li a:hover {
     font-weight: 700;
     margin-bottom: 15px;
 }
+
+/* ========== PROJECTS =========== */
+.projects {
+    padding-top: 15px;
+}
+.projects .head_text {
+    display:flex;
+    font-size: 34px;
+    color:#000;
+    font-family: 'MYRIADPRO-SEMIBOLD.OTF';  
+}
+.projects .head {
+    display: flex;
+    flex-direction: column;
+}
+.projects .head .head_top-text {
+    margin-right: 12px;
+}
+.projects .head .head_top-text:first-letter {
+    color:#ffc600;
+    font-size: 52px;
+}
+.projects .head .head_bott-text:first-letter {
+    font-size: 52px;
+}
+.projects .head .line {
+    width:140px;
+    height:1px;
+    background: rgb(185, 183, 183);
+    margin-left: 140px;
+    margin-top: -30px;
+}
+.projects .project-menu {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 20px; 
+    margin-bottom: 25px; 
+    font-family: 'MYRIADPRO-SEMIBOLD.OTF';   
+}
+.projects .project-menu li {
+    margin-right: 10px;
+    position: relative;
+}
+.projects .project-menu li:nth-child(1) {
+    margin-right: 40px;
+}
+.projects .project-menu li a {
+    color: #101010;
+    text-decoration: none;
+}
+.projects .project-menu li:hover::before {
+    content: '';
+    position: absolute; bottom: -3px; left: 20%;
+    width: 50%;
+    height: 2px;
+    background: #ffc600;
+}
+.projects .slim .col-xl-3 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+.projects .slim .col-xl-3 img{
+    width:100% !important;
+}
