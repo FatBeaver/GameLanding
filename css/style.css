@@ -671,3 +671,157 @@ footer {
     font-weight: 600;
     font-size: 26px;
 }
+
+
+
+
+/* ========= MEDIA REQUESTS =========== */
+@media screen and (max-width: 992px) {
+    div[adaptive="about_head"] {
+        margin-top: -140px !important;
+    }
+    .strategic .left > div:first-child {
+        order:2;
+    }
+    .strategic .left > div:last-child {
+        order:1;
+    }
+    .strategic .right > div:first-child {
+        order:2;
+    }
+    .strategic .right > div:last-child {
+        order:1;      
+    }
+    .about-line {
+        height: 260px;
+    }
+    .methods_body {
+        margin-bottom: 8px;
+        margin-top: 45px;
+    }
+    div[adaptive="service-none"] {
+        display: none;
+    }
+    div[adaptive="service-head"] {
+        justify-content: center !important;
+    }
+    div[adaptive="blog-list"] {
+        margin-top: 8px !important;
+    }
+    .blog .head {
+        margin-bottom:16px;
+    }
+    .blog .blog_nav ul {
+        display:flex !important;
+        flex-direction: row;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div[adaptive="about_head"] {
+        margin-top: 0 !important;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+    .about-line {
+        display: none;
+    }
+    .blog .head {
+        margin-bottom:16px;
+    }
+    .blog .blog_nav ul {
+        display:flex !important;
+        flex-direction: column;   
+    }
+    .blog_row .head .head_text{
+        justify-content: center !important;
+    }
+    .blog_row .head .line {
+        margin-left: 37%;
+    }
+    div[adaptive="blog-list"] {
+        margin-top: 8px !important;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 28px !important;
+    }
+    .blog {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .blog .blog_post {
+        width:40%;
+        margin-bottom: 10px;
+    }
+    div[adaptive="blog-posts"] {
+        flex-wrap: wrap;
+        justify-content: space-around !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    div[adaptive="gamepad-item"] {
+        margin-top: -30px !important;
+    }
+    .head {
+        font-size: 18px !important;
+    }
+    .about {
+        padding-bottom: 50px !important;
+    }
+    div[adaptive="project-header"] {
+        justify-content: center !important;
+    }
+    .project-menu li {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .project-menu li:first-child {
+        margin-right: 9px !important;
+    }
+    p[adaptive="service-text"] {
+        margin-bottom: 10px !important;
+    }
+    .projects .project-menu li:hover::before {
+        content: '';
+        position: absolute; bottom: -3px; left: 35%;
+        width: 30%;
+        height: 2px;
+        background: #ffc600;
+    }
+    .team_workers {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .logo {
+        font-size: 52px;
+        font-weight: 700;   
+        letter-spacing: -3px;
+        font-family: 'MYRIADPRO-BOLD.OTF';
+    }
+    .awesome {
+        margin-top: -15px;
+    }
+}
+@media screen and (max-width: 385px) {
+    .team {
+        padding: 50px 0 !important;
+    }
+    div[adaptive="worker-none"] {
+        display:none;
+    }
+}
+@media screen and (max-width: 445px) {
+    div[adaptive="test"] {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials .col-7 {
+        max-width:86% !important;
+    }
+    .testimonials .col-3 {
+        max-width:46% !important;
+    }
+}
