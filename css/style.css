@@ -530,3 +530,49 @@ nav ul li a:hover {
 .blog .blog_post h3 + p + p {
     font-style: italic;
 }
+
+/* =========== CONTACT US ============= */
+.contact {
+    color:white;
+}
+.contact .maps {
+    background: url(../images/contact_map.jpg) no-repeat;
+    background-size: auto 100%;
+    height: 100vh;
+}
+.contact .head_text {
+    display:flex;
+    font-size: 34px;
+    font-family: 'MYRIADPRO-SEMIBOLD.OTF';  
+}
+.contact .head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.contact .head .head_top-text {
+    margin-right: 12px;
+}
+.contact .head .head_top-text:first-letter {
+    color:#ffc600;
+    font-size: 52px;
+}
+.contact .head .head_bott-text:first-letter {
+    font-size: 52px;
+}
+.contact .head .line {
+    width:170px;
+    height:1px;
+    background: rgb(255, 255, 255);
+    margin-left:20px;
+    margin-top: -33px;
+}
+.contact .contact-form {
+    background-color: #2046b3;
+    height: 100vh;
+}
+.contact .form-container {
+    margin-left: 20px;
+    margin-top: 45px;
+}
