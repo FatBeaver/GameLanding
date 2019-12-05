@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/dbc2fc1ff4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" 
-    integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" 
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Game Create</title>
 </head>
@@ -23,10 +24,10 @@
                 <div class="col-xl-3 col-lg-5 col-md-6">
                     <nav class="header_nav">
                         <ul class="list-group list-group-horizontal-sm">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#team">Development</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#blog">Blog</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -34,7 +35,7 @@
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container-fluid">
             <div class="row justify-content-end align-items-center">
                 <div class="col-xl-4 col-lg-4 col-md-5 head" adaptive="about_head">
@@ -126,7 +127,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 head">
@@ -140,38 +141,38 @@
             <div class="row" adaptive="project-header">
                 <div class="col-xl-5 col-lg-6 col-md-10 col-sm-10 col-6">
                     <ul class="project-menu list-group list-group-horizontal-sm" >
-                        <li><a href="#">ALL WORKS</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Application</a></li>
-                        <li><a href="#">Content Development</a></li>
+                        <li project-type="all" status="on"><a href="#">ALL WORKS</a></li>
+                        <li project-type="games" status="off"><a href="#">Games</a></li>
+                        <li project-type="app" status="off"><a href="#">Application</a></li>
+                        <li project-type="content" status="off"><a href="#">Content Development</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row slim justify-content-center">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+            <div class="row slim justify-content-around projects">
+                <div project-type="content" class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <img src="images/game1.png" alt="game1" >
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                <div project-type="app" class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <img src="images/game2.png" alt="game2" >
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                <div project-type="games" class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <img src="images/game3.png" alt="game3" >
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                <div project-type="app" class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <img src="images/game4.png" alt="game4" >
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                <div project-type="games" class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <img src="images/game5.png" alt="game1" >
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                <div project-type="games" class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <img src="images/game6.png" alt="game2" >
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                <div project-type="content" class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <img src="images/game7.png" alt="game3" >
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                <div project-type="app" class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <img src="images/game8.png" alt="game4" >
                 </div>
             </div>
@@ -332,7 +333,7 @@
         </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-3 justify-content-start head">
@@ -412,7 +413,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <div class="row blog_row">
                 <div class="col-xl- col-lg-1 col-md-5 head">
@@ -424,34 +425,61 @@
                 <div class="col-xl-2 col-lg-2 col-md-12" adaptive="blog-list">
                     <nav class="blog_nav">
                         <ul class="list-group">
-                            <li><a href="#">Latest Posts</a></li>
-                            <li><a href="#">App Design</a></li>
-                            <li><a href="#">App Development</a></li>
-                            <li><a href="#">Design Solutions</a></li>
-                            <li><a href="#">Quality Assurance</a></li>
-                            <li><a href="#">Development Mode</a></li>
-                            <li><a href="#">What’s Out There</a></li>
+                            <li blog-category="latest" status="on"><a href="#">Latest Posts</a></li>
+                            <li blog-category="app-design" status="off"><a href="#">App Design</a></li>
+                            <li blog-category="app-dev" status="off"><a href="#">App Development</a></li>
+                            <li blog-category="design-sol" status="off"><a href="#">Design Solutions</a></li>
                         </ul>
                     </nav>
                 </div>
                 
                 <div class="col-xl-8 col-lg-8 ml-auto" adaptive="blog-posts">
-                    <div class="blog_post">
+                    <div class="blog_post" blog-category="app-design">
                         <img src="images/blog3.png" alt="blog3" class="img-fluid">
                         <h3>July 4th 2019</h3>
                         <p>Lorem ipsum, dolor sit ammet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
-                    <div class="blog_post">
+                    <div class="blog_post" blog-category="app-dev">
                         <img src="images/blog2.png" alt="blog3" class="img-fluid">
                         <h3>July 4th 2019</h3>
                         <p>Lorem ipsum, dolor sit ammet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
-                    <div class="blog_post">
+                    <div class="blog_post" blog-category="app-dev">
                         <img src="images/blog1.png" alt="blog3" class="img-fluid">
+                        <h3>July 4th 2019</h3>
+                        <p>Lorem ipsum, dolor sit ammet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    
+                    <div class="blog_post" blog-category="app-design" style="display:none;">
+                        <img src="images/blog3.png" alt="blog3" class="img-fluid">
+                        <h3>July 4th 2019</h3>
+                        <p>Lorem ipsum, dolor sit ammet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="blog_post" blog-category="design-sol" style="display:none;">
+                        <img src="images/blog3.png" alt="blog3" class="img-fluid">
+                        <h3>July 4th 2019</h3>
+                        <p>Lorem ipsum, dolor sit ammet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="blog_post" blog-category="design-sol" style="display:none;">
+                        <img src="images/blog3.png" alt="blog3" class="img-fluid">
+                        <h3>July 4th 2019</h3>
+                        <p>Lorem ipsum, dolor sit ammet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="blog_post" blog-category="app-design" style="display:none;">
+                        <img src="images/blog3.png" alt="blog3" class="img-fluid">
                         <h3>July 4th 2019</h3>
                         <p>Lorem ipsum, dolor sit ammet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -549,12 +577,18 @@
     <footer>  
         <p>All rights Reserved © 2019</p>       
     </footer>
+
+    <div class="to-top"><i class="fas fa-chevron-up"></i></div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" 
-    integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" 
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
